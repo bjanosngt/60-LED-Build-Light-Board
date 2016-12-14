@@ -47,3 +47,4 @@ Female DC Power adapter - 2.1mm jack to screw terminal block  | https://www.adaf
       * `* 15,16,17,18,19,20,21,22,23,0 * * 1,2,3,4,5 /usr/bin/php /home/pi/BuildLight/status.php`
   * Cut it up!
     * In order to make the 6 LED segments more seperated I cut (like butter with scissors) the strip into 10 pieces with 6 LEDs on each.  There are cut lines on the strip that go right through the GND, Din and 5V contacts.  Then you can just solder wires between the 3 contacts to "extend" the strip.  Let me know if you want a picture of this.
+  * Mount it on your favorite board (or in my case the only one you can find at your local hardware store).
