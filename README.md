@@ -1,8 +1,9 @@
 # 60-LED-Build-Light-Board
-Shows the status of 10 Jenkins jobs with up to 6 previous statuses for each job on a 60 LED strip.
+Shows the status of 10 Jenkins jobs with up to 6 previous statuses for each job on a 60 LED strip.  Look at the image below and see the Legend in the picture to see how each LED represents the status.
 
 ### Background:
-I wanted to want to be able to display Jenkins job statuses on a physical board...so I built this using help from an adafruit tutorial, adatruit products and some open source libraries. (See the 60LedCorkboardBuildStatus.JPG to see the final product)
+I wanted to want to be able to display Jenkins job statuses on a physical board...so I built this using help from an adafruit tutorial, adatruit products and some open source libraries. Here it is:
+![picture alt](https://github.com/bjanosngt/60-LED-Build-Light-Board/blob/master/60LedCorkboardBuildStatus.JPG)
 
 ### Hardware:
 Product  | Link
