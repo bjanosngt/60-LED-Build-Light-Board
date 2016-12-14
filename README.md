@@ -38,7 +38,7 @@ Female DC Power adapter - 2.1mm jack to screw terminal block  | https://www.adaf
  * In showBuild.py you'll want to do the following:
     * Update any paths to match yours
  * In status.php you'll want to do the following:
-    * Get the httpful PHP library here - http://phphttpclient.com/
+    * Get the httpful PHP library (to do HTTP GET requests) here - http://phphttpclient.com/
     * Update any paths to match yours
     * Insert the Jenkins URLs (10 total) that you want show.
     * Fix the HTTP GET username and passwords if you require basic auth.  If not, remove the authentication mechanism.
