@@ -36,6 +36,6 @@ Female DC Power adapter - 2.1mm jack to screw terminal block  | https://www.adaf
  * Grab the showBuild.py and status.php from above and put them wherever you want.
  * In showBuild.py you'll want to fix any paths to match yours and make sure it all looks good.
  * In status.php you'll want to update the following:
-  * Update any paths to match yours
-  * Insert the Jenkins URLs (10 total) that you want show.
-  * Fix the HTTP GET username and passwords if you require basic auth.  If not, remove the authentication mechanism.
+   * Update any paths to match yours
+   * Insert the Jenkins URLs (10 total) that you want show.
+   * Fix the HTTP GET username and passwords if you require basic auth.  If not, remove the authentication mechanism.
