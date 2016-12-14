@@ -44,7 +44,7 @@ Female DC Power adapter - 2.1mm jack to screw terminal block  | https://www.adaf
     * Fix the HTTP GET username and passwords if you require basic auth.  If not, remove the authentication mechanism.
   * Run it:
     * `php status.php`
-    * Or set it to run automatically by cron:
+    * Or set it to run automatically by cron (every minute):
       * `# Show the build status during business hours only: 8am - 5:59pm (MST) M-F`
       * `* 15,16,17,18,19,20,21,22,23,0 * * 1,2,3,4,5 /usr/bin/php /home/pi/BuildLight/status.php`
   * Cut it up!
