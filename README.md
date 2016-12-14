@@ -24,11 +24,18 @@ Female DC Power adapter - 2.1mm jack to screw terminal block  | https://www.adaf
  * Get the strandtest.py example working correctly.  If it doesn't work correctly then keep reading.  I had to do the following in order to get mine working correctly.  Just out of the box, when running strandtest.py it would sort of randomly display colors all down the strip.  Apparently the built-in audio hardware uses the same GPIO 18 to drive audio output and the sound drivers can be more aggressive in taking away control of GPIO 18 from any other process.  Create a kernel module blacklist file that prevents all the sound drivers from loading:
    * sudo vi /etc/modprobe.d/blacklist-rgb-matrix.conf
     * add the following lines:
-`blacklist snd_bcm2835
-blacklist snd_pcm
-blacklist snd_timer
-blacklist snd_pcsp
-blacklist snd`
+      * `blacklist snd_bcm2835`
+      * `blacklist snd_pcm`
+      * `blacklist snd_timer`
+      * `blacklist snd_pcsp`
+      * `blacklist snd`
     * Save the file and quit vi
     * sudo update-initramfs -u
     * reboot and confirm no "snd" modules are running by executing the command "lsmod"
+ * Now rerun the strandtest.py and it should work just fine.
+ * Grab the showBuild.py and status.php from above and put them wherever you want.
+ * In showBuild.py you'll want to fix any paths to match yours and make sure it all looks good.
+ * In status.php you'll want to update the following:
+  * Update any paths to match yours
+  * Insert the Jenkins URLs (10 total) that you want show.
+  * Fix the HTTP GET username and passwords if you require basic auth.  If not, remove the authentication mechanism.
